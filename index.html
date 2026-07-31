@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phishing Awareness Training</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    margin:0;
+}
+header{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+section{
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:8px;
+}
+h2{
+    color:#0d6efd;
+}
+.example{
+    background:#fff3cd;
+    padding:10px;
+    border-left:5px solid orange;
+}
+button{
+    background:#0d6efd;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    border-radius:5px;
+}
+button:hover{
+    background:#084298;
+}
+#result{
+    font-size:20px;
+    font-weight:bold;
+    color:green;
+}
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Phishing Awareness Training</h1>
+<p>CodeAlpha Cyber Security Internship</p>
+</header>
+
+<section>
+<h2>What is Phishing?</h2>
+<p>
+Phishing is a cyber attack where attackers trick users into revealing
+passwords, bank details, or personal information using fake emails,
+messages, or websites.
+</p>
+</section>
+
+<section>
+<h2>Types of Phishing</h2>
+<ul>
+<li>Email Phishing</li>
+<li>Smishing (SMS)</li>
+<li>Vishing (Voice Calls)</li>
+<li>Spear Phishing</li>
+</ul>
+</section>
+
+<section>
+<h2>How to Identify Phishing?</h2>
+
+<ul>
+<li>Unknown sender</li>
+<li>Urgent message</li>
+<li>Grammar mistakes</li>
+<li>Suspicious links</li>
+<li>Unexpected attachments</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Fake Email Example</h2>
+
+<div class="example">
+<b>From:</b> support@paytm-security.xyz<br><br>
+
+Your account will be blocked within 24 hours.
+Click the link below to verify your account immediately.
+
+<br><br>
+
+❌ This is a phishing email.
+</div>
+
+</section>
+
+<section>
+
+<h2>Safety Tips</h2>
+
+<ul>
+<li>Never click unknown links.</li>
+<li>Check website URL carefully.</li>
+<li>Use strong passwords.</li>
+<li>Enable Two-Factor Authentication (2FA).</li>
+<li>Keep your software updated.</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Quiz</h2>
+
+<p><b>1. Should you click links from unknown emails?</b></p>
+
+<input type="radio" name="q1"> Yes<br>
+<input type="radio" name="q1" id="q1"> No<br><br>
+
+<p><b>2. Which protocol is secure?</b></p>
+
+<input type="radio" name="q2" id="q2"> HTTPS<br>
+<input type="radio" name="q2"> HTTP<br><br>
+
+<p><b>3. SMS phishing is called?</b></p>
+
+<input type="radio" name="q3" id="q3"> Smishing<br>
+<input type="radio" name="q3"> Spamming<br><br>
+
+<button onclick="checkQuiz()">Submit Quiz</button>
+
+<p id="result"></p>
+
+</section>
+
+<footer>
+
+<h3>Stay Safe Online!</h3>
+
+<p>Think Before You Click.</p>
+
+</footer>
+
+<script>
+
+function checkQuiz(){
+
+let score=0;
+
+if(document.getElementById("q1").checked)
+score++;
+
+if(document.getElementById("q2").checked)
+score++;
+
+if(document.getElementById("q3").checked)
+score++;
+
+document.getElementById("result").innerHTML=
+"You scored "+score+" out of 3";
+
+}
+
+</script>
+
+</body>
+</html>
